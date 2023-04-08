@@ -1,0 +1,44 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.spread {
+    letter-spacing: 12px;
+}
+@media(max-width: 750px){
+    .spread {
+        letter-spacing: 1px;
+    }
+}
+.space {
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+.max-height {
+    max-height: 410px!important;
+}
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #0d47a1!important;
+    }
+}
+.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#0d47a1}@media only screen and (max-width:768px){.navbar{background-color:#0d47a1}}
+.about-intro {
+    background: url(https://t3.ftcdn.net/jpg/01/28/44/76/360_F_128447604_6deYSrg6bgH2F3YaoU0icdhvxNu4ReDN.jpg)
+    no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 60vh;
+}
+.contact-intro {
+    background: url(https://www.pca.state.mn.us/sites/default/files/contact-us-laptop-cell-phone.jpg)
+    no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 90px;
+}
