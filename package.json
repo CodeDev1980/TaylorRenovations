@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
+  "repository": {
+    "url": "https://github.com/CodeDev1980/TaylorRenovations.git",
+    "support": "https://github.com/CodeDev1980/TaylorRenovations.git/README.md"
+  },
   "keywords": [
     "painter",
     "home",

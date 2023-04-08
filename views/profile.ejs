@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/header') -%>
+<body>
+<header>
+    <!-- Navbar -->
+    <%- include('partials/navBar') -%>
+    <!-- Navbar -->
+
+    <!--Section: Design Block-->
+    <section>
+        <div id="intro" class="bg-image" style="
+                background-image: url('https://www.unesco.org/sites/default/files/2022-07/addressing-conspiracy-theories-guide-for-teachers_0.png');
+                height: 50vh;
+                ">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="container d-flex justify-content-center align-items-center h-100">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-10 text-center p-3">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/" class="fw-bold text-white">Home Page</a></li>
+                                    <li class="breadcrumb-item text-white" aria-current="page">
+                                        <a href="/blogs" class="fw-bold text-white">Blogs Page</a>
+                                    </li>
+                                    <li class="breadcrumb-item text-white" aria-current="page">User Data</li>
+                                </ol>
+                            </nav>
+                            <h1 class="text-white text-center display-3">
+                                <%= user.username %>
+                            </h1>
+                            <h5 class="text-white-50">
+                                Joined on <%= user.dateJoined.toLocaleString() %>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section: Design Block-->
+</header>
+
+<main>
+    <div class="container my-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-10">
+                <p>
+                    <a href="mailto:<%= user.email %>" class="fw-bold text-decoration-underline">Email</a> me for a direct response.
+                </p>
+                <p class="lead">
+                    <%= user.about %>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Container for demo purpose -->
+</main>
+
+<%- include('partials/footer') -%>
+</body>
+<%- include('partials/scripts') -%>
+</html>

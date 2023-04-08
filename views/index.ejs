@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/header') -%>
+<body>
+  <!-- Start your project here-->
+  <%- include('partials/navBar') -%>
+  <!-- parallax intro -->
+
+  <%- include('db/home-intro') -%>
+
+  <div class="container my-5">
+    <%- include('db/home-features') -%>
+  </div>
+
+    <div class="space">
+      <%- include('db/home-status-banner') -%>
+    </div>
+
+  <div class="container my-5">
+    <%- include('db/home-article') -%>
+    <%- include('db/home-projects') -%>
+    <!--Section: Content-->
+    <br>
+    <%- include('db/home-blogs') -%>
+
+  </div>
+
+  <%- include('partials/footer') -%>
+
+  <!-- End your project here-->
+
+<%- include('partials/scripts') -%>
+
+</body>
+</html>
