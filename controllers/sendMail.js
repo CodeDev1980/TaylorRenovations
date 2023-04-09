@@ -14,8 +14,8 @@ module.exports = async (req, res) => {
     }
     const transporter = nodemailer.createTransport(config);
     const to = process.env.RECEIVER
-    const { from, name, phone, subject, text } = req.body
-    const data = { to, from, phone, name, subject, text };
+    const { from, subject, text } = req.body
+    const data = { to, from, subject, text };
     await transporter.sendMail(data, (err, info) => {
         if(err){
             console.log(err)

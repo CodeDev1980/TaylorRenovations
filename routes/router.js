@@ -4,6 +4,7 @@ const homeController = require('../controllers/homePage');
 const aboutController = require('../controllers/aboutPage');
 const contactController = require('../controllers/contactPage');
 const sendMailController = require('../controllers/sendMail');
+const mailSenderController = require('../controllers/postForm');
 // User DB
 const registerController = require('../controllers/register');
 const storeUserController = require('../controllers/StoreUser');
@@ -26,6 +27,7 @@ router.get('/', homeController);
 router.get('/about', aboutController);
 router.get('/contact', contactController);
 router.post('/send/mail', sendMailController);
+router.post('/form/send', mailSenderController)
 // User DB
 router.get('/register', registerController);
 router.post('/store/user', storeUserController);
