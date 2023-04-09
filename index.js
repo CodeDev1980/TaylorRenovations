@@ -12,14 +12,14 @@ const NodeCache = require( "node-cache" );
 let myCache = new NodeCache();
 const sitemap = require('sitemap-generator');
 const { http, https } = require('follow-redirects');
-http.get('http://localhost:8080', response => {
+http.get('http://taylor-renovations.herokuapp.com/', response => {
     response.on('data', chunk => {
         console.log(chunk);
     });
 }).on('error', err => {
     console.error(err);
 });
-https.get('https://localhost:8080', 'https://localhost:8080', response => {
+https.get('https://taylor-renovations.herokuapp.com/', 'https://localhost:8080', response => {
     response.on('data', chunk => {
         console.log(chunk);
     });
@@ -28,7 +28,7 @@ https.get('https://localhost:8080', 'https://localhost:8080', response => {
 });
 
 // create generator
-const generator = sitemap('https://localhost:8080', {
+const generator = sitemap('https://taylor-renovations.herokuapp.com/', {
     stripQuerystring: false
 });
 
