@@ -3,6 +3,7 @@ const router = require('express').Router();
 const homeController = require('../controllers/homePage');
 const aboutController = require('../controllers/aboutPage');
 const contactController = require('../controllers/contactPage');
+const sendMailController = require('../controllers/sendMail');
 // User DB
 const registerController = require('../controllers/register');
 const storeUserController = require('../controllers/StoreUser');
@@ -24,6 +25,7 @@ const auth = require('../middlewares/ifAuthorized');
 router.get('/', homeController);
 router.get('/about', aboutController);
 router.get('/contact', contactController);
+router.post('/send/mail', sendMailController);
 // User DB
 router.get('/register', registerController);
 router.post('/store/user', storeUserController);

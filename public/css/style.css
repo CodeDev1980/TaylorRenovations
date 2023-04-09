@@ -42,3 +42,11 @@ body {
     padding-top: 160px;
     padding-bottom: 90px;
 }
+.thankYou {
+    background: url('/img/messageSentBG.png')
+    no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
