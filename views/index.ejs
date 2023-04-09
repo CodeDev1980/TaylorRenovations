@@ -21,7 +21,10 @@
     <%- include('db/home-projects') -%>
     <!--Section: Content-->
     <br>
-    <%- include('db/home-blogs') -%>
+
+    <% for(i=0; i < blogs.length; i++){ %>
+      <%- include('db/home-blogs') -%>
+    <% } %>
 
   </div>
 

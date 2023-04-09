@@ -10,9 +10,18 @@
     <loc>https://taylor-renovations.herokuapp.com/contact</loc>
   </url>
   <url>
+    <loc>https://taylor-renovations.herokuapp.com/blogs</loc>
+  </url>
+  <url>
     <loc>https://taylor-renovations.herokuapp.com/register</loc>
   </url>
   <url>
     <loc>https://taylor-renovations.herokuapp.com/login</loc>
+  </url>
+  <url>
+    <loc>https://taylor-renovations.herokuapp.com/post/64334173f60b95b1a13f5bf2</loc>
+  </url>
+  <url>
+    <loc>https://taylor-renovations.herokuapp.com/profile/6431cf77e85b5da7449dadba</loc>
   </url>
 </urlset>
