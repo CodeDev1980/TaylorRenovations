@@ -13,19 +13,11 @@
                 background-image: url('https://www.unesco.org/sites/default/files/2022-07/addressing-conspiracy-theories-guide-for-teachers_0.png');
                 height: 50vh;
                 ">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.6);">
                 <div class="container d-flex justify-content-center align-items-center h-100">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-10 text-center p-3">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="/" class="fw-bold text-white">Home Page</a></li>
-                                    <li class="breadcrumb-item text-white" aria-current="page">
-                                        <a href="/blogs" class="fw-bold text-white">Blogs Page</a>
-                                    </li>
-                                    <li class="breadcrumb-item text-white" aria-current="page">User Data</li>
-                                </ol>
-                            </nav>
+
                             <h1 class="text-white text-center display-3">
                                 <%= user.username %>
                             </h1>
@@ -45,6 +37,15 @@
     <div class="container my-5">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-10">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" class="fw-bold text-dark">Home Page</a></li>
+                        <li class="breadcrumb-item text-dark" aria-current="page">
+                            <a href="/blogs" class="fw-bold text-dark">Blogs Page</a>
+                        </li>
+                        <li class="breadcrumb-item text-dark" aria-current="page">User Data</li>
+                    </ol>
+                </nav>
                 <p>
                     <a href="mailto:<%= user.email %>" class="fw-bold text-decoration-underline">Email</a> me for a direct response.
                 </p>
